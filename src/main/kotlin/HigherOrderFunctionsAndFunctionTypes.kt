@@ -12,7 +12,7 @@ programming*/
 
 fun main() {
     println(sum(1.1, 2.2))
-    println(power(2.0, 4.0))
+    println(power(2.0, 4))
 
     /*we can store the function inside of the variable in kotlin*/
     /*functions are the first class citizen in kotlin like the way we give the importance to the objects*/
@@ -26,7 +26,7 @@ fun sum(a: Double, b: Double): Double {
     return a + b
 }
 
-fun power(a: Double, b: Double): Double {
+private fun power(a: Double, b: Int): Double {
     return a.pow(b)
 }
 
