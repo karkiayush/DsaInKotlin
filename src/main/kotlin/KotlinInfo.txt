@@ -37,4 +37,7 @@ Coroutines: Kotlin provides built-in support for coroutines, allowing developers
 
 Standard Library: Kotlin comes with a rich standard library that provides common functionality for tasks such as collections, I/O, and concurrency. The standard library is also designed to be concise and expressive, making it easy for developers to write clean and efficient code.
 
-In summary, Kotlin leverages the Java Virtual Machine for execution, allowing it to benefit from the performance and portability of the JVM. The language provides modern features such as null safety and coroutines while maintaining compatibility with existing Java code. The combination of these factors makes Kotlin a versatile and powerful language for building a wide range of applications.
+In summary, Kotlin leverages the Java Virtual Machine for execution, allowing it to benefit from the performance and
+portability of the JVM. The language provides modern features such as null safety and coroutines while maintaining
+compatibility with existing Java code. The combination of these factors makes Kotlin a versatile and powerful language
+for building a wide range of applications.
