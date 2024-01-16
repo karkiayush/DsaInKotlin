@@ -1,4 +1,4 @@
-/*
+package recall/*
 * Generics is a way of generalizing our code whenever we need to manipulate and use multiple data types in same way.
 *
 * For example: we have a class as below for receiving, assigning to a variable and returning its value

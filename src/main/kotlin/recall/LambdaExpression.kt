@@ -1,4 +1,4 @@
-/*Lambdas and Lambdas Expression*/
+package recall/*Lambdas and Lambdas Expression*/
 
 
 /*Different variation of lambdas*/
