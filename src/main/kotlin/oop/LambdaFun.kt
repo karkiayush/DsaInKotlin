@@ -1,4 +1,4 @@
-package OOP
+package oop
 
 fun main() {
     val modResult = { a: Int -> a % 2 == 0 }

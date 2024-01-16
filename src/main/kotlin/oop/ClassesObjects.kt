@@ -1,4 +1,4 @@
-package OOP
+package oop
 
 /*OOp which stands for the object oriented programming is the paradigm that allows us to solve the programming
 problems related it with the real world entities*/

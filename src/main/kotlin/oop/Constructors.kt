@@ -1,4 +1,4 @@
-package OOP
+package oop
 
 /*
 * A constructors is a concise way to initialize class props.

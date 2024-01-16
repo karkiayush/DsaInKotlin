@@ -1,4 +1,4 @@
-package TimeComplexity
+package timecomplexity
 
 /**
  *How well does it scale?

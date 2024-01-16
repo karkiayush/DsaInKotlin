@@ -1,4 +1,4 @@
-package OOP
+package oop
 
 interface AnonymousClass {
     fun onDownloadStarted()

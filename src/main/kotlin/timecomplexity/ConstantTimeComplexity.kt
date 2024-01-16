@@ -1,4 +1,4 @@
-package TimeComplexity
+package timecomplexity
 
 /**A constant time algo is the one that have the same running time regardless of its input size.*/
 

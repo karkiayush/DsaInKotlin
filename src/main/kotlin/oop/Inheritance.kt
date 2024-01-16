@@ -1,4 +1,4 @@
-package OOP
+package oop
 
 /*
 * Notice, the keyword open before the base class, Person. It's important.
