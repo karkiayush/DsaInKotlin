@@ -8,7 +8,7 @@ package timecomplexity
  * Here's a simple Kotlin program demonstrating logarithmic time complexity using binary search:
  * */
 
-fun binarySearch(arr: IntArray, target: Int): Int {
+fun binarySearch(arr: List<Int>, target: Int): Int {
     var low = 0
     var high = arr.size - 1
 
@@ -26,9 +26,20 @@ fun binarySearch(arr: IntArray, target: Int): Int {
 }
 
 fun main() {
-    val sortedArray = intArrayOf(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
-    val target = 8
+    val userInputArray = arrayListOf<Int>()
+    println("How many element do you want in the array ?\n")
+    val elementCount = readln().toInt()
 
+    println("Input $elementCount elements\n")
+    for (i in 0..<elementCount) {
+        val element = readln().toInt()
+        userInputArray.add(element)
+    }
+
+    println("Which element do you wanna search ?\n")
+    val target= readln().toInt()
+
+    val sortedArray=userInputArray.sorted()
     val result = binarySearch(sortedArray, target)
 
     if (result != -1) {
