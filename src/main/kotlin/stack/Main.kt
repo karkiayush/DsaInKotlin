@@ -1,5 +1,7 @@
 package stack
 
+import oop.higherOrderUsingLambda
+
 /**
  * Stack is a Last-In-First-Out (LIFO) data structure. Elements are added and removed from the same end, known as the
  * top. Common operations include push (add an element to the top) and pop (remove the top element).
@@ -14,7 +16,7 @@ package stack
  * firstly we create an interface
  * */
 fun main() {
-    var ourStackImpl = OurStackImplementation<Int>()
+    val ourStackImpl = OurStackImplementation<Int>()
 
     ourStackImpl.push(33)
     ourStackImpl.push(22)
@@ -40,4 +42,11 @@ fun main() {
     println("size of stack: ${ourStackImpl.getSize()}")
     println("Top element of stack: ${ourStackImpl.getTopElement()}")
     println(ourStackImpl.isStackEmpty())
+
+    val ourStackImplementation = OurStackImplementation<String>()
+    ourStackImplementation.push("Steven")
+    ourStackImplementation.push("Meg")
+    ourStackImplementation.push("Mitchell")
+    ourStackImplementation.push("Patrick")
+    println(ourStackImplementation)
 }
