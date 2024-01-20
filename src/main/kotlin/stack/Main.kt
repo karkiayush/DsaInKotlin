@@ -20,4 +20,24 @@ fun main() {
     ourStackImpl.push(22)
     ourStackImpl.push(11)
     ourStackImpl.push(0)
+    println(ourStackImpl)
+
+    ourStackImpl.pop()
+
+    println(ourStackImpl)
+    println("size of stack: ${ourStackImpl.getSize()}")
+    println("Top element of stack: ${ourStackImpl.getTopElement()}")
+    println("${ourStackImpl.isStackEmpty()}\n")
+
+
+    ourStackImpl.pop()
+    ourStackImpl.pop()
+    ourStackImpl.pop()
+
+    /**Checking the stack after popping out all the elements*/
+
+    println(ourStackImpl)
+    println("size of stack: ${ourStackImpl.getSize()}")
+    println("Top element of stack: ${ourStackImpl.getTopElement()}")
+    println(ourStackImpl.isStackEmpty())
 }

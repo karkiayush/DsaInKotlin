@@ -7,11 +7,15 @@ class OurStackImplementation<T : Any> : OurStack<T> {
     private val dataStorage = arrayListOf<T>()
 
     override fun toString() = buildString {
-        appendLine("--------Top-----------")
-        dataStorage.reversed().forEach {
-            appendLine("$it")
+        if (dataStorage.size != 0) {
+            appendLine("<=========TOP==========>")
+            dataStorage.reversed().forEach {
+                appendLine("$it")
+            }
+            appendLine("=========================")
+        } else {
+            appendLine("Stack is totally empty")
         }
-        appendLine("-----------------------")
     }
 
     override fun push(element: T) {
@@ -26,4 +30,25 @@ class OurStackImplementation<T : Any> : OurStack<T> {
             dataStorage.removeAt(topIndex)
         }
     }
+
+    override fun getSize(): Int {
+        return dataStorage.size
+    }
+
+    override fun getTopElement(): T? {
+        return if (dataStorage.size != 0) {
+            dataStorage[dataStorage.size - 1]
+        } else {
+            null
+        }
+    }
+
+    override fun isStackEmpty(): String {
+        return if (dataStorage.size == 0) {
+            "The stack is empty"
+        } else {
+            "The stack is not empty"
+        }
+    }
+
 }

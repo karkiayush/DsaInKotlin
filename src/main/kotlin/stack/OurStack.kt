@@ -8,4 +8,7 @@ interface OurStack<T : Any> {
      *
      * As the stack can be null sometime, so we need to make the pop function nullable by adding the ?*/
     fun pop(): T?
+    fun getSize(): Int
+    fun getTopElement(): T?
+    fun isStackEmpty(): String
 }
